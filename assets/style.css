@@ -1,0 +1,68 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    left: 43%;
+}
+
+header {
+    font-size: 150%;
+}
+
+h1 {
+    position: absolute;
+    left: 30%;
+}
+
+#timer {
+    position: absolute;
+    right: 80px;
+    top: 15px;
+}
+
+#high-scores{
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+
+#start {
+    position: absolute;
+    justify-content: center;
+    top: 150px;
+    left: 48%;
+}
+
+ul {
+    position: absolute;
+    top: 300px;
+    left: 38%;
+    list-style: none;
+}
+
+li {
+    background-color: orange;
+    color: Black;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid white;
+    width: 240px;
+
+}
+
+body {
+    background-color: black;
+}
+.main-text {
+    color: orange;
+}
+#question-title {
+    position: absolute;
+    top: 250px;
+    left: 40%;
+    list-style: none;
+    background-color: white;
+    border: 3px solid orange;
+    padding: 15px;
+    font-weight: bold;
+}
