@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./assets/style.css">
-        <title>Coding Quiz</title>
-    </head>
-    <body>
-        <header>
-            <h1 class="main-text">Are you ready to get Quizing</h1>
-            <h3 class="main-text" id="high-scores">View Highscores</h3>
-            <h3 class="main-text" id="time"></h3>
-        </header>
-        <main id="container">
-            <div id="start"></div>
-            <div  id="question-title"></div>
-            <ul>
-                <li class="posAns"></li>
-                <li class="posAns"></li>
-                <li class="posAns"></li>
-            </ul>
-        </main>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript quiz - play</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <main>
+        <section class="main-page">
+            <button class="start-button btn">begin.</button>
+        </section>
+
+        <div class="wrapper">
+            <div class="container" id="abcontainer">
+                <div id="game" class="justify-center flex-column">
+                    <h2 id="question">What is the answer to this question?</h2>
+                    <div class="choice-container">
+                        <p class="choice-text" id="choice-a" data-number="0">a</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-text" id="choice-b" data-number="1">b</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-text" id="choice-c" data-number="2">c</p>
+                    </div>
+                </div>
+            </div>
+            <div class="game-info">
+                <section class="hud">
+                        <p class="hud-label">question.</p>
+                        <h1 id="question-counter" class="bg-info">0/3</h1>
+                </section>
+                <section class="hud">
+                    <p class="hud-label">time.</p>
+                    <h1 class="timer-text bg-info">20</h1>
+                </section>      
+                <section class="hud">
+                    <p class="hud-label">score.</p>
+                    <h1 id="score" class="bg-info">0</h1>
+                </section>
+            </div> 
+        </div>
 
 
+        <div class="exit-page">
+            <section class="exit-hud">
+                <p class="final-score-label">final score.</p>               
+                <h1 id="final-score"></h1>
+                <div class="highscore-form">
+                    <form id="highscore-form-content">
+                        <input type="text" name="username" id="username" placeholder="enter-name.">
+                        <button type="submit" class="btn" id="save-score-btn" disabled>save score.</button>
+                    </form>
+                </div>
+                <a class="btn" href="highscorescreen.html">highscores.</a>
+                <a class="btn" href="./index.html">play again.</a>
+                <a class="btn" href="./start.html">go home.</a>
 
+            </section>
+        </div>
+  
+    </main>
 
-
-      <script src="./assets/style.js"></script>  
-    </body>
-    <footer> Proudly made by Daniel Sixsmith</footer>
+    <script src="./assets/style.js"></script>
+    
+</body>
 </html>
