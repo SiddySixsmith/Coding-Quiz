@@ -31,8 +31,8 @@ var finalScore;
 
 var questions = [
     {
-        question: "what ",
-        answers: ["a. let", "b. const", "c. my variable is"],
+        question: "what is NOT a data type",
+        answers: ["a. font-size", "b. Number", "c. string"],
         correctAnswer: 0
     },
     {     
@@ -41,14 +41,19 @@ var questions = [
         correctAnswer: 1
     },
     {     
-        question: "how can we change the style of an element on our html page",
-        answers: ["a. js-color-changer", "b. colour-to", "c. css.change"],
+        question: "what is a booleen",
+        answers: ["a. color codeing", "b. a set of elements", "c. true||false"],
         correctAnswer: 3
+    },
+    {
+        question: "Complete this statement// Returns a random integer from 0 to 10// 'Math.floor(Math.() * 11)'", 
+        answers: ["a. random", "b. hide", "c. split"],
+        correctAnswer: 0
     },
 ];  
 const CORRECT_BONUS = 2;
-const MAX_QUESTIONS = 3;
-const TIME_PENALTY = 5;
+const MAX_QUESTIONS = 4;
+const TIME_PENALTY = 2;
 const DELAY = 750;
 const MAX_HIGHSCORES = 3;
 
@@ -132,13 +137,13 @@ function gameOver () {
 }
 
 function getFinalScore () {
-    var scoreAdd = score * timeLeft 
+    var scoreAdd = score;
     finalScore = scoreAdd
 }
 
 function loadQuestion () {
     questionCounter++;
-    questionCounterEl.textContent = questionCounter + '/3'; 
+    questionCounterEl.textContent = questionCounter + '/4'; 
 
    if (questionCounter > questions.length && questionCounter >= MAX_QUESTIONS) { 
         return gameOver();
